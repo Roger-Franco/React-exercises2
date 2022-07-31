@@ -1,13 +1,13 @@
 import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
-// import Primeiro from './componentes/PrimeiroComponente';
-import MultiElementos from './componentes/MultiElementos';
+
+import FamiliaSilva from './componentes/FamiliaSilva';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
   <div>
-    <MultiElementos />
+    <FamiliaSilva />
 
   </div>
   , elemento);
