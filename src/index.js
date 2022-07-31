@@ -11,5 +11,5 @@ import Primeiro from './componentes/PrimeiroComponente';
 // );
 
 const elemento = document.getElementById('root');
-ReactDOM.render(<Primeiro />, elemento);
+ReactDOM.render(<Primeiro valor="Bom dia!" />, elemento);
 
