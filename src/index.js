@@ -2,13 +2,12 @@ import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
 // import Primeiro from './componentes/PrimeiroComponente';
-import { CompA, CompB as B } from './componentes/DoisComponentes';
+import MultiElementos from './componentes/MultiElementos';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
   <div>
-    <CompA valor="Olá, eu sou A" />
-    <B valor="Olá, eu sou B" />
+    <MultiElementos />
 
   </div>
   , elemento);
