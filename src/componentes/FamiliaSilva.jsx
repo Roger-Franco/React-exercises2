@@ -1,7 +1,7 @@
 import React from 'react'
 import Membro from './Membro'
 
-export default function FamiliaSilva() {
+export default props => {
   return (
     <div>
       <Membro nome="Rafael" sobrenome="Silva" />

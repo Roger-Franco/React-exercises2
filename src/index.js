@@ -2,6 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
 
+import FamiliaSilva from './componentes/FamiliaSilva';
 import Familia from './componentes/Familia';
 import Membro from './componentes/Membro';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Membro nome="Thu" />
       <Membro nome="Zoe" />
     </Familia>
+    <FamiliaSilva />
 
   </div>
   , elemento);
