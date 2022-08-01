@@ -2,7 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import ReactDOM from 'react-dom';
 
-import FamiliaSilva from './componentes/FamiliaSilva';
+// import FamiliaSilva from './componentes/FamiliaSilva';
 import Familia from './componentes/Familia';
 import Membro from './componentes/Membro';
 
@@ -11,9 +11,9 @@ ReactDOM.render(
   <div>
     <Familia sobrenome="Franco">
       <Membro nome="Thu" />
-      <Membro nome="Zoe" />
+      {/* <Membro nome="Zoe" /> */}
     </Familia>
-    <FamiliaSilva />
+    {/* <FamiliaSilva /> */}
 
   </div>
   , elemento);
