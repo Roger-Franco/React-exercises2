@@ -7,18 +7,20 @@ import ReactDOM from 'react-dom';
 // import Membro from './componentes/Membro';
 // import ComponenteComFuncao from './componentes/ComponenteComFuncao';
 // import Pai from './componentes/Pai';
-import ComponenteClasse from './componentes/ComponenteClasse';
+// import ComponenteClasse from './componentes/ComponenteClasse';
+import Contador from './componentes/Contador';
 
 const elemento = document.getElementById('root');
 ReactDOM.render(
   <div>
+    <Contador numero={0} />
     {/* <Familia sobrenome="Franco">
       <Membro nome="Thu" /> */}
     {/* <Membro nome="Zoe" /> */}
     {/* </Familia> */}
     {/* <FamiliaSilva /> */}
     {/* <ComponenteComFuncao /> */}
-    <ComponenteClasse valor="Eu sou um compoennte de classe" />
+    {/* <ComponenteClasse valor="Eu sou um compoennte de classe" /> */}
 
   </div>
   , elemento);
