@@ -2,16 +2,38 @@ import React, { Component } from 'react'
 
 export default class Contador extends Component {
 
+  state = {
+    numero: this.props.numeroInicial
+    // numero: 0
+  }
+  // state = {
+  //   numero: this.props.numero
+  // }
+
   maisUm = () => {
-    // this.props.numero++
-    console.log(this);
+    // this.state.numero = this.state.numero + 1 // não funciona
+    this.setState({ numero: this.state.numero + 1 }) // ou pode ser abaixo
+    // this.alterarNumero(1)
+    // console.log(this);
+  }
+
+  menosUm = () => {
+    // this.setState({ numero: this.state.numero - 1 })
+    this.alterarNumero(-1)
+  }
+
+  alterarNumero = (diferenca) => {
+    // this.state.numero = this.state.numero + 1
+    this.setState({ numero: this.state.numero + diferenca })
   }
   render() {
     return (
       <div>
-        <div>Número: {this.props.numero}</div>
+        <div>Número: {this.state.numero}</div>
         <button onClick={this.maisUm}>Inc</button>
-        <button>Dec</button>
+        <button onClick={this.menosUm}>Dec</button>
+        <button onClick={() => this.alterarNumero(10)}>Inc10</button>
+        <button onClick={() => this.alterarNumero(-10)}>Dec10</button>
       </div>
     )
   }

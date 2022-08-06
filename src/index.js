@@ -13,7 +13,7 @@ import Contador from './componentes/Contador';
 const elemento = document.getElementById('root');
 ReactDOM.render(
   <div>
-    <Contador numero={0} />
+    <Contador numeroInicial={10} />
     {/* <Familia sobrenome="Franco">
       <Membro nome="Thu" /> */}
     {/* <Membro nome="Zoe" /> */}
